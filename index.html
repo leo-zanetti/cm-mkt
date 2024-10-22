@@ -9,7 +9,7 @@
 		/>
 		<title>CM - Marketing e Mídia</title>
 		<link rel="stylesheet" href="assets/css/index.css" />
-		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="assets/images/cm-logo.png" type="image/x-icon" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -34,11 +34,6 @@
 		</header>
 
 		<main>
-			<!-- <section id="home" class="home">
-        <h2 class="section-title">Home</h2>
-        <div class="section-content"></div>
-      </section> -->
-
 			<!-- <section id="sobre">
         <h2 class="section-title">Sobre mim</h2>
         <div class="section-content">
@@ -59,6 +54,12 @@
         </div> -->
 			<!-- </section> -->
 			<div class="container">
+				<section id="home">
+					<h2 class="section-title">Home</h2>
+					<div class="section-content">
+						<iframe src="" frameborder="0"></iframe>
+					</div>
+				</section>
 				<section id="servicos">
 					<h2 class="section-title">Serviços</h2>
 					<div class="section-content">
@@ -305,27 +306,42 @@
 
 		<footer>
 			<div class="footer-content">
-				<p>&copy; 2024 CM - Marketing e Mídia. Todos os direitos reservados.</p>
-				<address>
-					<p id="contato">
-						Contato:
-						<a href="mailto:cmmarketingemidia@gmail.com"
-							>cmmarketingemidia@gmail.com</a
-						>
+				<div class="footer-logo">
+					<img src="assets/images/cm-logo.png" alt="" />
+				</div>
+				<div class="footer-information">
+					<p>Itirapina - São Paulo</p>
+					<p>
+						Telefone: +55 (19) 99118-0693 | E-mail: cmmarketingemidia@gmail.com
 					</p>
-				</address>
+					<p>
+						&copy; 2024 CM - Marketing e Mídia. Todos os direitos reservados.
+					</p>
+					<address>
+						<p id="contato">
+							Contato:
+							<a href="mailto:cmmarketingemidia@gmail.com"
+								>cmmarketingemidia@gmail.com</a
+							>
+						</p>
+					</address>
+				</div>
+				<div class="footer-social-networks">
+					<a
+						href="https://www.instagram.com/cm_marketingemidia?igsh=MXZpNDVneTdwMW5hZA=="
+						target="_blank"
+						rel="noopener noreferrer"
+						><img src="assets/images/instagram-logo.png" alt=""
+					/></a>
+					<a
+						href="https://wa.me/message/DRWOVWZ3WOXHK1"
+						target="_blank"
+						rel="noopener noreferrer"
+						><img src="assets/images/whatsapp-logo.png" alt=""
+					/></a>
+				</div>
 			</div>
 		</footer>
-
-		<script>
-			var flkty = new Flickity(".carousel", {
-				cellAlign: "center",
-				contain: true,
-				prevNextButtons: true,
-				pageDots: false,
-				wrapAround: true,
-			});
-		</script>
 		<script src="assets/js/index.js"></script>
 	</body>
 </html>

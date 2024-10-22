@@ -11,3 +11,11 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 		});
 	});
 });
+
+var flkty = new Flickity(".carousel", {
+	cellAlign: "center",
+	contain: true,
+	prevNextButtons: true,
+	pageDots: false,
+	wrapAround: true,
+});

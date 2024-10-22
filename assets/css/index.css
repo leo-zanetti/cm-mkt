@@ -4,6 +4,10 @@
 	font-family: "Montserrat", sans-serif;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 body {
 	line-height: 1.6;
 }
@@ -102,9 +106,9 @@ body {
 
 .carousel {
 	width: 100%;
-	max-width: 40vw; /* Tamanho máximo do carrossel */
-	height: 50rem; /* Altura do carrossel */
-	overflow: hidden; /* Oculta qualquer conteúdo que exceda os limites */
+	max-width: 40vw;
+	height: 50rem;
+	overflow: hidden;
 }
 
 .carousel-cell {
@@ -127,11 +131,51 @@ body {
 
 .footer-content {
 	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	gap: 1rem;
+	max-width: 100vw;
+	max-height: 4rem;
+	margin: 0;
+	background-color: #fff;
+}
+
+.footer-logo {
+	width: 100%;
+}
+
+.footer-logo img {
+	max-height: 100%;
+	width: auto;
+}
+
+.footer-information {
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 1rem;
-	background-color: #fff;
+	gap: 0.5rem;
+	width: 100%;
+}
+
+.footer-social-networks {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+	height: 4rem;
+}
+
+.footer-social-networks a {
+	display: inline-block;
+	height: 100%;
+}
+
+.footer-social-networks a img {
+	max-height: 100%;
+	width: auto;
 }
 
 @media (max-width: 768px) {
