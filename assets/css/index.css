@@ -45,13 +45,13 @@ body {
 	gap: 2rem;
 	list-style: none;
 	margin: 0;
-	padding: 1rem;
+	padding: 1.25rem;
 }
 
 .menu a {
 	padding: 0.5rem;
 	text-decoration: none;
-	transition: color 0.3s;
+	transition: 0.3s;
 	background-color: #fff;
 }
 
@@ -62,9 +62,7 @@ body {
 }
 
 .section-title {
-	margin-top: 3.75rem;
-	margin-left: 10vw;
-	padding: 1.25rem;
+	margin: 3.75rem 20vw 0.5rem;
 }
 
 .section-content {
@@ -74,20 +72,33 @@ body {
 	justify-content: center;
 	gap: 1rem;
 	width: 80vw;
-	height: 100vh;
-	margin: 1rem 20vw;
+	margin: 0 20vw;
 }
 
-.section-content-profile-img {
-	width: 25%;
-	height: 25%;
-	object-fit: cover;
-	border-radius: 5px;
-}
+.home-video {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: space-between;
+	align-items: center;
+	gap: 5rem;
+	width: 80%;
+	min-height: 80%;
+	max-width: 100%;
+	max-height: 50rem;
+	overflow: hidden;
 
-.section-content-paragraph {
-	text-align: justify;
-	font-size: 2rem;
+	video {
+		flex: 1;
+		height: 90%;
+	}
+
+	p {
+		flex: 0.5;
+		align-self: start;
+		text-align: justify;
+		font-size: 1.5rem;
+	}
 }
 
 .service-card {
@@ -95,7 +106,7 @@ body {
 	border-radius: 1rem;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	padding: 1rem;
-	height: 50%;
+	min-height: 50%;
 	text-align: center;
 }
 
@@ -114,19 +125,32 @@ body {
 .carousel-cell {
 	width: 100%;
 	height: 100%;
-	display: flex;
 }
 
 .carousel-content-logo-row {
 	display: flex;
 	flex-direction: row;
-	gap: 1rem;
-	text-align: justify;
+	justify-content: center;
+	gap: 2rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+
+	p {
+		flex: 0.5;
+		align-self: center;
+		text-align: justify;
+		font-size: 1rem;
+	}
+	img {
+		align-self: center;
+	}
 }
 
-.carousel-content-logo-column img {
-	width: 100%;
-	height: 100%;
+.carousel-content-photos {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	object-fit: contain;
 }
 
 .footer-content {
@@ -134,6 +158,7 @@ body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
+	margin-top: 1rem;
 	padding: 1.25rem;
 	background-color: #333;
 	color: #fff;
@@ -206,8 +231,18 @@ body {
 		display: none;
 	}
 
+	.home-video {
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+
 	.footer-content {
 		flex-direction: column;
+	}
+
+	.footer-logo {
+		justify-self: center;
 	}
 
 	.footer-social-networks {
