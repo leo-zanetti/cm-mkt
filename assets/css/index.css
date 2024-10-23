@@ -250,7 +250,7 @@ body {
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		gap: 2rem;
 		width: 100%;
 		list-style: none;
