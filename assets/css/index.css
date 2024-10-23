@@ -222,7 +222,7 @@ body {
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 390px) {
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -254,6 +254,7 @@ body {
 		gap: 2rem;
 		width: 100%;
 		list-style: none;
+		font-size: 0.75rem;
 	}
 
 	.menu a {
@@ -321,6 +322,13 @@ body {
 	}
 
 	.carousel-cell {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: auto;
+
 		h2,
 		h3 {
 			text-align: center;
@@ -337,17 +345,6 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-self: center;
-
-		p {
-			flex: 0.5;
-			word-break: break-word;
-			justify-self: center;
-			font-size: 0.75rem;
-		}
-
-		img {
-			align-self: center;
-		}
 	}
 
 	.carousel-content-photos {
