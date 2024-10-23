@@ -1,1 +1,21 @@
-document.querySelectorAll("a[href^=\"#\"]").forEach(a=>{a.addEventListener("click",function(a){a.preventDefault();const b=document.querySelector(this.getAttribute("href")),c=document.querySelector(".navbar").offsetTop;window.scrollTo({top:b.offsetTop-c,behavior:"smooth"})})});var flkty=new Flickity(".carousel",{cellAlign:"center",contain:!0,prevNextButtons:!0,pageDots:!1,wrapAround:!0});
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+	anchor.addEventListener("click", function (e) {
+		e.preventDefault();
+
+		const targetElement = document.querySelector(this.getAttribute("href"));
+		const navbarHeight = document.querySelector(".navbar").offsetTop;
+
+		window.scrollTo({
+			top: targetElement.offsetTop - navbarHeight,
+			behavior: "smooth",
+		});
+	});
+});
+
+var flkty = new Flickity(".carousel", {
+	cellAlign: "center",
+	contain: true,
+	prevNextButtons: true,
+	pageDots: false,
+	wrapAround: true,
+});
