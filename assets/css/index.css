@@ -388,12 +388,16 @@ body {
 		width: 100%;
 
 		a {
-			color: #fdfdff;
+			color: #fff;
 			text-decoration: none;
 		}
 
 		a:hover {
 			text-decoration: underline;
+		}
+
+		.email-link {
+			color: #fdfdff;
 		}
 	}
 
